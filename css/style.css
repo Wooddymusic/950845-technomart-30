@@ -1,0 +1,360 @@
+/* Fonts */
+
+@font-face {
+    font-family: "Cuprum";
+    font-weight: 400; 
+    font-style: normal;
+    src: url("../fonts/cuprum.woff2") format("woff2"),
+         url("../fonts/cuprum.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Cuprum Bold";
+    font-weight: 700;
+    font-style: normal;
+    src: url("../fonts/cuprumbold.woff2") format("woff2"),
+         url("../fonts/cuprumbold.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Cuprum Bold Italic";
+    font-weight: 700;
+    font-style: italic;
+    src: url("../fonts/cuprumbolditalic.woff2") format("woff2"),
+         url("../fonts/cuprumbolditalic.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Cuprum Italic";
+    font-weight: 400;
+    font-style: italic;
+    src: url("../fonts/cuprumitalic.woff2") format("woff2"),
+         url("../fonts/cuprumitalic.woff") format("woff");
+  }
+  @font-face {
+    font-family: "PT Sans";
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/ptsans.woff2") format("woff2"),
+         url("../fonts/ptsans.woff") format("woff");
+  }
+  @font-face {
+    font-family: "PT Sans Bold";
+    font-weight: 700;
+    font-style: normal;
+    src: url("../fonts/ptsansbold.woff2") format("woff2"),
+         url("../fonts/ptsansbold.woff") format("woff");
+  }
+
+  /* Variables */
+
+  :root {
+    --basic-black: #000000;
+    --basic-white: #ffffff;
+    --basic-grey: #3D546F;
+    --basic-background: #F1F5F7;
+    --basic-red: #EE3643;
+    --basic-green: #63A63E;
+    --basic-greylight: #C5C5C5;
+    --basic-yellow: #FFBF47;
+    --basic-beige: #F9F5F0;
+    --basic-blue: #3BBCE3;
+    --basic-pink: #DC91D8;
+    --basic-greenlight: #8ED78F;
+    --basic-bunting: #293449;
+    --basic-gulfblue: #32425C;
+    --basic-darkgrey: #A9A9A9;
+    --basic-aliceblue: #F3F7F9;
+    --basic-salomie: #FFD180;
+
+  }
+
+  /* Global */
+
+  body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px; 
+    font-weight: 400;
+    color: var(--basic-black); 
+    text-transform: uppercase;
+    background-color: var(--basic-white);
+  }
+  .page-body ul {
+    list-style: none;
+  }
+  h3 {
+    text-transform: capitalize;
+    font-size: 24px;
+    line-height: 30px; 
+    font-family: "Cuprum Bold", Arial, sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+    list-style: none;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Main navigation */
+
+  
+  .main-header.container {
+    color: var(--basic-white);
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-navigation {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--basic-white);
+    background-color: var(--basic-gulfblue);
+  }
+  .main-header {
+    background-color: var(--basic-bunting);
+    text-transform: none;
+  }
+  .header-color {
+    background-color: var(--basic-background);
+    padding: 47px 0 60px 0;
+  }
+  .main-header a {
+    color: var(--basic-white);
+  }
+  .main-header-logo {
+   /* width: 220px;
+    height: 47px;*/
+    background-color: var(--basic-red);
+    padding: 12px 56px;
+  }
+  .checkout {
+    background-color: var(--basic-green);
+    width: 115px;
+    height: 24px;
+    padding: 9px 16px 9px 19px;
+  }
+  .decor {
+    font-family: "Cuprum Italic";
+    color: var(--basic-red);
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .phone {
+    font: inherit;
+    background-color: transparent;
+    border: 3px var(--basic-white) solid;
+  }
+  .address {
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--basic-gulfblue);
+  }
+  .header-info a {
+    color: var(--basic-red);
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+  .header-login {
+    font-size: 21px;
+    line-height: 21px;
+  }
+  .header-login a{
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+    text-align: center;
+  }
+  .slider a {
+    background-color:  var(--basic-red);
+    color: var(--basic-white);
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+
+  /* User navigation */
+
+  .sait-navigation a {
+    color: var(--basic-white);
+  }
+  .sait-navigation a:hover,
+  .sait-navigation a:focus {
+    background-color: var(--basic-bunting);
+  }
+  .sait-navigation {
+    display: flex;
+  }
+  .category-item {
+    width: 300px;
+    height: 123px;
+    color: var(--basic-white);
+    font-size: 24px;
+    line-height: 30px;
+    font: inherit;
+  }
+  .category-item a {
+    color: var(--basic-white);
+  }
+  .material {
+    background-color: var(--basic-yellow);
+  }
+  .tool {
+    background-color: var(--basic-blue);
+  }
+  .technics {
+    background-color: var(--basic-pink);
+  }
+  .sale {
+    background-color: var(--basic-greenlight);
+  }
+  .delivery {
+    background-color: var(--basic-yellow);
+  }
+  .popular-goods-content {
+    height: 89px;
+    background-color: var(--basic-beige);
+  }
+  .popular-goods-content a {
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .popular-goods-list a {
+    color: var(--basic-black);
+  }
+  .popular-goods-content h2 {
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--basic-gulfblue);
+    font-weight: normal;
+  }
+  .popular-goods-item {
+    width: 220px;
+    height: 318px;
+    background-color: var(--basic-white);
+    border: 1px solid #EAEAEA;
+  }
+  .popular-goods-item h3 {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .popular-goods-item a {
+    color: var(--basic-black);
+  }
+  .old-price {
+    text-decoration: line-through;
+    color: var(--basic-darkgrey);
+  }
+  .popular-brands {
+    height: 89px;
+    background-color: var(--basic-beige);
+  }
+  .popular-brands h2 {
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--basic-gulfblue);
+    font-weight: normal;
+  }
+  .popular-brands a {
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .brands-item {
+    background-color: var(--basic-white);
+    border: 1px solid #EAEAEA;
+    width: 220px;
+    height: 145px;
+    text-align: center;
+  }
+  .services-color {
+    background-color: var(--basic-background);
+  }
+  .services {
+    background-color: var(--basic-background);
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    text-transform: none;
+  } 
+  .services h2 {
+    text-transform: uppercase;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+  }
+  .servises-item a {
+    font-family: "Cuprum Bold", Arial, sans-serif;
+    font-size: 21px;
+    line-height: 30px;
+    color: var(--basic-white);
+    background-color: var(--basic-gulfblue);
+  }
+  .features p {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    text-transform: none;
+  }
+  .features h2 {
+    font: inherit;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .features-list {
+    font: inherit;
+    text-transform: none;
+  }
+  .features a {
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .contacts h2 {
+      font: inherit;
+      font-size: 30px;
+      line-height: 30px;
+  }
+  .contacts a {
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  /* Footer */ 
+
+  .main-footer {
+    text-transform: none;
+    color: var(--basic-aliceblue);
+    background-color: var(--basic-gulfblue);
+  }
+  .main-footer a {
+    color: var(--basic-salomie);
+  }
+  .main-footer-logo {
+    background-color: var(--basic-red);
+    padding: 20px 41px;
+  }
+  .footer-nav a{
+    color: var(--basic-background);
+  }
+  .bottom-section {
+    font-size: 16px;
+    line-height: 18px;
+    background-color: var(--basic-bunting);
+  }
